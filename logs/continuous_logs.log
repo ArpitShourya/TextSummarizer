@@ -1,0 +1,68 @@
+[2025-01-26 21:43:52,025: INFO: main: Stage: Data Ingestion Stage started:]
+[2025-01-26 21:43:52,025: INFO: common: yaml file: config\config.yaml loaded successfully:]
+[2025-01-26 21:43:52,067: INFO: common: yaml file: params.yaml loaded successfully:]
+[2025-01-26 21:43:52,067: INFO: common: Created directory at artifacts:]
+[2025-01-26 21:43:52,067: INFO: common: Created directory at artifacts/data_ingestion:]
+[2025-01-26 21:43:52,067: ERROR: main: "'ConfigBox' object has no attribute 'source_url'":]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\TextSummarizer\TextSummarizer\main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\TextSummarizer\TextSummarizer\src\TextSummarizer\pipeline\data_ingestion_pipeline.py", line 11, in initiate_data_ingestion
+    data_ingestion_config=config.get_data_ingestion_config()
+  File "E:\TextSummarizer\TextSummarizer\src\TextSummarizer\config\configuration.py", line 17, in get_data_ingestion_config
+    source_url=config.source_url,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'source_url'"
+[2025-01-26 21:45:45,795: INFO: main: Stage: Data Ingestion Stage started:]
+[2025-01-26 21:45:45,795: INFO: common: yaml file: config\config.yaml loaded successfully:]
+[2025-01-26 21:45:45,803: INFO: common: yaml file: params.yaml loaded successfully:]
+[2025-01-26 21:45:45,803: INFO: common: Created directory at artifacts:]
+[2025-01-26 21:45:45,806: INFO: common: Created directory at artifacts/data_ingestion:]
+[2025-01-26 21:45:49,147: INFO: data_ingestion: Dataset Downloaded:]
+[2025-01-26 21:45:49,608: INFO: main: Stage Data Ingestion Stage completed:]
